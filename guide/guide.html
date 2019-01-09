@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('../inc/head.html')
+</head>
+<body>
+	<div id="wrap">
+        @@include('../inc/header.html')
+
+		<!-- container s -->
+        <div id="container">
+            <!-- ===== guide s ===== -->
+            <style>
+            .g_header h2{line-height:100px; text-align:center; font-size:40px; color:#0770bb;}
+            .g_portlet{margin:15px 0;}
+            .g_portlet h2.g_tit{position:relative; font-size:18px; color:#0770bb; border-bottom:2px solid #0770bb; padding:10px 20px 10px 10px;}
+            .g_portlet h2.g_tit:before{position:absolute; content:'-'; left:0; color:#0770bb;}
+            .g_portlet h3.g_tit{font-size:16px; font-weight:normal; color:#666; padding:15px 20px 10px 0; border-bottom:1px solid #ddd;}
+            .g_portlet h3.g_tit:first-child{margin-top:0;}
+            .g_portlet .g_content{padding:10px 0 15px}
+            .g_portlet .g_content > a + *{margin-top:5px;}
+            .g_portlet .g_content .font + .font{margin-top:15px;}
+            .g_portlet .g_content .font span{display:block;}
+            </style>
+
+			@@include('../inc/location.html')
+
+            <div class="g_header">
+                <h2>GUIDE</h2>
+            </div>
+            <div class="content">
+                <div class="g_portlet">
+                    <h2 class="g_tit">폰트</h2>
+                    <div class="g_content">
+                        <div class="font" style="font-family:NotoL; font-size:16px;">
+                            <span>Light</span>
+                            <span>1234567890</span>
+                        </div>
+                        <div class="font" style="font-family:NotoR; font-size:16px;">
+                            <span>Regular</span>
+                            <span>1234567890</span>
+                        </div>
+                        <div class="font" style="font-family:NotoB; font-size:16px;">
+                            <span>Bold</span>
+                            <span>1234567890</span>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="g_portlet">
+                    <h2 class="g_tit">컬러</h2>
+                    <div class="g_content">
+						<div class="font">
+                        	<div class="color-style1">#0770bb</div>
+						</div>
+						<div class="font">
+							<div class="color-style2">#2ca48f</div>
+						</div>
+						<div class="font">
+							<div class="color-style3">#e3751c</div>
+						</div>
+						<div class="font">
+							<div class="color-style4">#777777</div>
+						</div>
+                    </div>
+                </div>
+
+                <div class="g_portlet">
+                    <h2 class="g_tit">타이틀</h2>
+                    <div class="g_content">
+						<div class="font">
+                        	<h1 class="title-style1">타이틀 스타일1</h1>
+						</div>
+						<div class="font">
+							<h1 class="title-style2">타이틀 스타일2</h1>
+						</div>
+						<div class="font">
+							<p class="text-style1">style1 서브카피</p>
+						</div>
+                    </div>
+                </div>
+
+                <div class="g_portlet">
+                    <h2 class="g_tit">버튼</h2>
+                    <div class="g_content">
+                        <h3 class="g_tit">버튼01</h3>
+                        <div class="g_content">
+							<div class="btn-wrap">
+                            	<button type="button" class="btn btn-m color01">m</button>
+								<button type="button" class="btn btn-m color02">m-mint</button>
+								<button type="button" class="btn btn-m color03">m-gray</button>
+							</div>
+                        </div>
+                        <h3 class="g_tit">버튼02</h3>
+                        <div class="g_content">
+							<div class="btn-wrap">
+                            	<button type="button" class="btn btn-l color01">l</button>
+								<button type="button" class="btn btn-l color02">l-mint</button>
+								<button type="button" class="btn btn-l color03">l-gray</button>
+							</div>
+                        </div>
+						<h3 class="g_tit">버튼03</h3>
+                        <div class="g_content">
+							<div class="btn-wrap">
+                            	<button type="button" class="more">+ More</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="g_portlet">
+                    <h2 class="g_tit">Input</h2>
+                    <div class="g_content">
+                        <div class="g_content">
+							<label for="" class="hide">text</label><input type="text" id="" />
+							<label for="" class="hide">text</label><input type="text" id="" disabled/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g_portlet">
+                    <h2 class="g_tit">컴포넌트</h2>
+                    <div class="g_content">
+                        <h3 class="g_tit">Checkbox</h3>
+                        <div class="g_content">
+							<div class="checkbox">
+								<input type="checkbox" id="check" aria-checked="false" >
+								<label for="check" >체크A</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="check-a" aria-checked="true" checked>
+								<label for="check-a" >체크A</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="check-ad" aria-checked="false" disabled >
+								<label for="check-ad" >체크A</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="check-acd" aria-checked="true" checked disabled >
+								<label for="check-acd" >체크A</label>
+							</div>
+                        </div>
+                        <h3 class="g_tit">Selectbox</h3>
+                        <div class="g_content">
+                            <div class="form_select">
+                                <select>
+                                    <option>option1</option>
+                                    <option>option2</option>
+                                    <option>option3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3 class="g_tit">Radiobutton</h3>
+                        <div class="g_content">
+							<div class="radio">
+								<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked="true" checked>
+								<label for="radio-a2" >라디오</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="radio-b2" name="select1"  value="2" aria-checked="false">
+								<label for="radio-b2" >라디오</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="radio-c2" name="select1" value="3"  aria-checked="false" disabled>
+								<label for="radio-c2" >라디오</label>
+							</div>
+                        </div>
+                        <h3 class="g_tit">Switch</h3>
+                        <div class="g_content">
+							<div class="switch-wrap">
+								<div class="switch-button">
+									<input type="radio" id="switch-button1" name="switch"  value="1" aria-checked="false">
+									<label for="switch-button1" >네</label>
+								</div>
+								<div class="switch-button">
+									<input type="radio" id="switch-button2" name="switch"  value="2" aria-checked="true" checked>
+									<label for="switch-button2" >아니오</label>
+								</div>
+							</div>
+							<div class="switch-wrap">
+								<div class="switch-button">
+									<input type="radio" id="switch-button3" name="switch2"  value="1" aria-checked="false" disabled>
+									<label for="switch-button3" >네</label>
+								</div>
+								<div class="switch-button">
+									<input type="radio" id="switch-button4" name="switch2"  value="2" aria-checked="true" checked>
+									<label for="switch-button4" >아니오</label>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g_portlet">
+                    <h2 class="g_tit">테이블</h2>
+                    <div class="g_content">
+                        <h3 class="g_tit">테이블01</h3>
+                        <div class="g_content">
+							<table class="table table-type1">
+								<caption><span class="offscreen">Type1</span></caption>
+								<colgroup>
+									<col width="75px">
+									<col width="*">
+									<col width="133px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">Title</th>
+										<th scope="col">Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2</td>
+										<td class="ta_l">Inha University Hospital starts running the Vital beam from 23rd  of April</td>
+										<td>2018-11-29</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td class="ta_l">Inha University Hospital starts running the Vital beam from 23rd  of April</td>
+										<td>2018-11-29</td>
+									</tr>
+								</tbody>
+							</table>
+                        </div>
+                        <h3 class="g_tit">테이블03</h3>
+                        <div class="g_content">
+							<table class="table table-type3">
+								<caption><span class="offscreen">Type3</span></caption>
+								<colgroup>
+									<col style="width:200px">
+									<col style="">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>
+											Patient’s Name<span class="acc">*<span class="offscreen">필수입력</span></span>
+										</th>
+										<td>
+											<input type="text" placeholder="">
+										</td>
+									</tr>
+									<tr>
+										<th>
+											Gender<span class="acc">*<span class="offscreen">필수입력</span></span>
+										</th>
+										<td>
+											<div class="radio">
+												<input type="radio" id="radio-a3" name="select1"  value="1" aria-checked="true" checked>
+												<label for="radio-a3">Male</label>
+											</div>
+											<div class="radio">
+												<input type="radio" id="radio-b4" name="select1"  value="2" aria-checked="false">
+												<label for="radio-b4">Female</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											Contact Number
+										</th>
+										<td>
+											<div class="input_wrap">
+												<p class="input_tit">Permanent Address</p>
+												<input type="text" placeholder="Enter the Permanent Address">
+											</div>
+											<div class="input_wrap">
+												<p class="input_tit">Permanent Address<span>Selection input value</span></p>
+												<input type="text" placeholder="Enter the Permanent Address">
+											</div>
+											<div class="input_wrap">
+												<p class="input_tit">Permanent Address</p>
+												<input type="text" placeholder="Enter the Permanent Address">
+											</div>
+											<p class="info-text">- Enter the all number with the country code : Ex) +82-32-890-2080</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											Referring M.D.<span class="acc">*<span class="offscreen">필수입력</span></span>
+										</th>
+										<td>
+											<div class="input_wrap w100">
+												<p class="input_tit">Name and Title</p>
+												<input type="text" placeholder="Enter the Name and Title">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											Medical
+										</th>
+										<td>
+											<div class="input_wrap w100">
+												<textarea name="name" rows="8" cols="80"></textarea>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											Payment Method<span class="acc">*<span class="offscreen">필수입력</span></span>
+										</th>
+										<td>
+											<div class="radio">
+												<input type="radio" id="radio-pay1" name="radio"  value="1" aria-checked="true" checked>
+												<label for="radio-pay1" >Cash</label>
+											</div>
+											<div class="radio">
+												<input type="radio" id="radio-pay2" name="radio"  value="2" aria-checked="false">
+												<label for="radio-pay2" >Visa</label>
+											</div>
+											<div class="radio">
+												<input type="radio" id="radio-pay3" name="radio" value="3" aria-checked="false">
+												<label for="radio-pay3">Master Card</label>
+											</div>
+											<div class="input_wrap">
+												<div class="radio">
+													<input type="radio" id="radio-pay4" name="radio" value="3" aria-checked="false">
+													<label for="radio-pay4">Master Card</label>
+												</div>
+												<input type="text" placeholder="">
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="info-text color-style1">- Enter the all number with the country code : Ex) +82-32-890-2080</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g_portlet">
+                    <h2 class="g_tit">Tab</h2>
+                    <div class="g_content">
+						<div class="tab">
+					        <ul>
+					            <li class="active"><a href="#none">tab1</a></li>
+					            <li><a href="#none">tab2</a></li>
+					            <li><a href="#none">tab3</a></li>
+					            <li><a href="#none">tab4</a></li>
+					            <li><a href="#none">tab5</a></li>
+					        </ul>
+					    </div>
+                    </div>
+                </div>
+
+				<div class="g_portlet">
+                    <h2 class="g_tit">Accordion</h2>
+                    <div class="g_content">
+						<div class="accordion_list">
+							<ul>
+								<li>
+									<div class="title">
+										<p>2017 Year</p>
+									</div>
+									<div class="cont">
+										<div class="view">
+											<ul>
+												<li>
+													<strong>2017.03</strong>
+													<ul>
+														<li>Inauguration of the 6th Vice president for medicine and president of Inha Univ. Hospital</li>
+														<li>Opening of Stabilization & recovery room </li>
+														<li>MOU with Allergy environmental health science center and Jung-gu public health center</li>
+														<li>Entrance ceremony of the 3rd Health-culture CEO course</li>
+														<li>Cooperating MOU with Korea Polytechnic University</li>
+													</ul>
+												</li>
+												<li>
+													<strong>2017.02</strong>
+													<ul>
+														<li>Achievement of 2 hundred thousand times Endoscopy</li>
+														<li>Urgent medical volunteer for victims of Haiti earthquake</li>
+													</ul>
+												</li>
+												<li>
+													<strong>2017.01</strong>
+													<ul>
+														<li>MOU for outsourcing management of Nam-gu dementia integration management center</li>
+														<li>Opening of B1 floor amenities</li>
+														<li>Installation of self issuing civil affair documents</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="title">
+										<p>2016 Year</p>
+									</div>
+									<div class="cont">
+										<div class="view">
+											<ul>
+												<li>
+													<strong>2017.03</strong>
+													<ul>
+														<li>Inauguration of the 6th Vice president for medicine and president of Inha Univ. Hospital</li>
+														<li>Opening of Stabilization & recovery room </li>
+														<li>MOU with Allergy environmental health science center and Jung-gu public health center</li>
+														<li>Entrance ceremony of the 3rd Health-culture CEO course</li>
+														<li>Cooperating MOU with Korea Polytechnic University</li>
+													</ul>
+												</li>
+												<li>
+													<strong>2017.02</strong>
+													<ul>
+														<li>Achievement of 2 hundred thousand times Endoscopy</li>
+														<li>Urgent medical volunteer for victims of Haiti earthquake</li>
+													</ul>
+												</li>
+												<li>
+													<strong>2017.01</strong>
+													<ul>
+														<li>MOU for outsourcing management of Nam-gu dementia integration management center</li>
+														<li>Opening of B1 floor amenities</li>
+														<li>Installation of self issuing civil affair documents</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+                    </div>
+                </div>
+
+                <div class="g_portlet">
+                    <h2 class="g_tit">Pagination</h2>
+                    <div class="g_content">
+                        <!-- 페이징 -->
+						<div class="pager" role="navigation" aria-label="페이지 선택 영역">
+							<div class="page">
+								<ul>
+									<li>
+										<a href="#first" class="jump first">
+											<span>처음 페이지 보기</span>
+										</a>
+									</li>
+									<li>
+										<a href="#prev" class="jump prev">
+											<span>이전 10 페이지 보기</span>
+										</a>
+									</li>
+									<li class="active">
+										<a href="#none">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>1</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#2">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>2</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#3">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>3</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#4">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>4</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#5">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>5</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#6">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>6</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#7">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>7</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#8">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>8</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#9">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>9</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#10">
+											<span>
+												<span class="offscreen">페이지 보기</span>
+												<span>10</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#next" class="jump next">
+											<span>다음 10 페이지 보기</span>
+										</a>
+									</li>
+									<li>
+										<a href="#last" class="jump last">
+											<span>마지막 페이지 보기</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+                        <!--// 페이징 -->
+                    </div>
+                </div>
+            </div>
+            <!--// ===== guide e ===== -->
+        </div>
+        <!--// container e -->
+
+        <!-- footer -->
+    	@@include('../inc/footer.html')
+        <!--// footer -->
+    </div>
+</body>
+</html>
