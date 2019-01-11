@@ -24,7 +24,7 @@ a{text-decoration:none;}
 #footer .footer_content p{font-size:13px; color:#aaa; margin-top:4px;}
 
 /* --- header --- */
-#header{position:absolute; top:0; height:130px; width:100%; background:#0770bb; z-index:5; color:#fff;}
+#header{position:fixed; top:0; height:130px; width:100%; min-width:1180px; background:#0770bb; z-index:11; color:#fff;}
 #header .util_wrap{position:relative; height:60px; border-bottom:1px solid #398dc9; box-sizing:border-box;}
 #header .util{width:1180px; margin:0 auto; color:#fff;}
 #header .util .logo{float:left; margin-top:10px;}
